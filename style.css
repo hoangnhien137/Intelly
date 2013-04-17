@@ -1,0 +1,274 @@
+/*
+Theme Name: Intelly
+Theme URI: http://intelligenthemes.com
+Description: The most awsome theme on planet earth and in solar system.
+Author: Veselin Radovic
+Author URI: http://intelligenthemes.com
+Version: 2.0
+*/
+
+/*--------------------------------------------------------*/
+/*-- CLASSES --*/
+
+.cfct-build .text-left,
+.cfct-build [text-align=left]{
+    text-align: left;
+}
+.cfct-build .text-center,
+.cfct-build [text-align=center]{
+    text-align: center;
+}
+.cfct-build .text-right,
+.cfct-build [text-align=right]{
+    text-align: right;
+}
+.cfct-build .clear{
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    overflow: hidden;
+}
+.cfct-build .alignleft{
+    float: left;
+}
+.cfct-build .alignright{
+    float: right;
+}
+
+/* === IMAGE === */
+.cfct-build .image-holder{
+    display: inline-block;
+    overflow: hidden;
+    /*width: 100%;*/
+    /* 
+    ADD
+    max-height: pixels;
+    */
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+.cfct-build .image-holder img{
+    /*width: 100%;*/
+    height: auto;
+    border-radius: inherit;
+}
+.cfct-build .image-holder,
+.cfct-build .image-holder img{
+    max-width: 100%;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+}
+
+/* === FRAMES === */
+.cfct-build .image-frame{
+    display: inline-block;
+}
+.cfct-build .image-frame .outer-frame,
+.cfct-build .image-frame .inner-frame{
+    display: block;
+}
+.cfct-build .image-frame,
+.cfct-build .image-frame *{
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+}
+#ie8 .cfct-build .image-frame img{
+    width: auto;
+}
+
+/* === SHADOWS === */
+.cfct-build .image-shadow{
+    float: left;
+}
+.cfct-build .image-shadow:after{
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.cfct-build .image-shadow{
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+/* === BUTTONS === */
+.cfct-build .button{
+    font-family: 'Arial';
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+}
+.cfct-build .button:focus,
+.cfct-build .button::-moz-focus-inner {
+    padding:0;
+} 
+.cfct-build .button,
+.cfct-build .button span{
+    display: inline-block;
+    text-align: center;
+}
+.cfct-build .button .button-holder,
+.cfct-build .button .button-wrapper,
+.cfct-build .button .button-inner{
+    position: relative;
+}
+.cfct-build .button .button-holder-overlay,
+.cfct-build .button .button-wrapper-overlay,
+.cfct-build .button .button-inner-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.cfct-build .button .button-text{
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* === LIGHTBOX === */
+.cfct-build .lightbox{
+    max-width: 100%;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    position: relative;
+}
+.cfct-build .lightbox:after{
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.cfct-build .lightbox > .lightbox-hover{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.cfct-build .lightbox .lightbox-icon{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: left top no-repeat;
+}
+
+/* === SLIDER PAGERS === */
+.cfct-build .slide-pager,
+.cfct-build .slide-pager > li{
+    list-style: none;
+    font-size: 0;
+    line-height: 0;
+}
+.cfct-build .slide-pager > li{
+    display: inline-block;
+}
+#ie7 .cfct-build .slide-pager > li{
+    display: inline;
+}
+.cfct-build .slide-pager > li > a{
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* === PRELOADER === */
+.cfct-build .preloader{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+}
+
+/* === SLIDER ARROWS === */
+.cfct-build .slider-arrow{
+    display: block;
+    position: absolute;
+    top: 50%;
+    text-indent: -999px;
+    font-size: 0;
+    line-height: 0;
+    z-index: 100;
+    background-repeat: no-repeat;
+}
+.cfct-build .slider-arrow > span{
+    display: block;
+}
+.cfct-build .slider-arrow.prev{
+    left: 0;
+}
+.cfct-build .slider-arrow.next{
+    right: 0;
+}
+/* === NAVIGATIONS === */
+.cfct-build .nav-container ul,
+.cfct-build .nav-container li,
+.cfct-build .nav-container a{
+    display: block;
+}
+.cfct-build .nav-container li{
+    position: relative;
+}
+.cfct-build .nav-container > ul > li{
+    float: left;
+}
+.cfct-build .nav-container a{
+    white-space: nowrap;
+}
+.cfct-build .nav-container > ul > li:first-child,
+.cfct-build .nav-container > ul > li:first-child > a{
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.cfct-build .nav-container > ul > li:last-child,
+.cfct-build .nav-container > ul > li:last-child > a{
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+/* subnav */
+.cfct-build .nav-container ul ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+}
+.cfct-build .nav-container > ul > li > ul{
+    top: auto;
+    left: 0;
+}
+/*----------------------------------------------------------------*/
+/* === Clearing === */
+.cfct-build .intl-clear:after,
+.cfct-module-inner:after,
+.cfct-build .nav-container:after,
+.cfct-build .nav-container ul:after{
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+#ie7 .cfct-build .intl-clear,
+#ie7 .cfct-module-inner,
+#ie7 .cfct-build .nav-container ul,
+#ie7 .cfct-build .nav-container{
+    display: inline-block;
+}
